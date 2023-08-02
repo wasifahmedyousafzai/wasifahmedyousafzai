@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> </meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>wasif world</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+       box-sizing: border-box;
+       text-decoration: none;
+       scroll-behavior: smooth;
+       list-style: none;
+       font-family:Arial, Helvetica, sans-serif;
+       border:none;
+       outline: none;
+       user-select: none;
+    }
+    body{
+        background-color: #240046;
+    }
+    /*=================================nav bar starts==========================*/
+header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 4px;
+    z-index: 4;
+    background-color: #c77dff;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    z-index: 4;
+}
+ a{
+    border-radius: 20px;
+    transition: 0.4s;
+    font-size: larger;
+    text-transform: capitalize;
+   color: #240046;
+}
+.active{
+    background-color: #3c096c;
+}
+.active a{
+    color: #c77dff ;
+}
+li:hover a{
+    color: #c77dff;
+}
+li{
+    width: 85px;
+    height: 40px;
+    transition: 0.3s;
+    text-align: center;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+li:hover{
+    background-color: #3c096c;
+}
+/*=====================================nav bar ends==========================*/
+section{
+    max-width: 100vw;
+    height: 100vh;
+  
+}
+section:nth-child(odd){
+    background-color: #3c096c;
+}
+section:nth-child(even){
+    background-color: #5a189a;
+}
+section:nth-child(6){
+    background-color: #10002b;
+}
+
+/*============================== header starts==================*/
+.header{
+    background-color: #240046;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header form{
+    width: 60%;
+    height: 50px;
+    margin-bottom: 280px;
+    position: relative;
+}
+.header form input[type=submit ]{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    height: 45px;
+    width: 120px;
+    border-radius: 0 50px 50px 0;
+    background-color:  #e0aaff;
+    font-size: 1rem;
+    transition: 0.25s;
+}
+.header form input[type=submit ]:hover{
+    background-color: #c77dff;
+    letter-spacing: 1px;
+}
+#header-search {
+    width: 85%;
+    height: 45px;
+    padding: 15px;
+    font-size: 20px;
+    position: relative;
+    border-radius: 50px 0 0 50px;
+    z-index: 1;
+    color: gray;
+    background-color: #e1dfe2;
+  
+}
+.header-topic-portfolio{
+  position: relative;
+ z-index: 1;
+ margin-bottom: 25px;
+ color: #240046;
+}
+.header-topic-portfolio span{
+    color: aliceblue;
+}
+
+
+#wave{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+   
+}
+/*=====================contact us page=================*/
+
+.contact-us{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.left{
+    padding: 50px;
+}
+.contact-us-topic{
+   color: #c77dff;
+   font-size: 32px;
+   width: 200px;
+   transform: translateY(-25px);
+  position: relative;
+}
+.contact-us-topic::after{
+    content: '';
+    width: 60%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 5px;
+    background-color: #eb62eb;
+    border-radius: 2px;
+}
+.contact-us-content{
+    color: #e0aaff;
+    font-size: 30px;
+    
+    
+}
+.contact-us-website{
+    font-size: 32px;
+    color: #c77dff;
+}
+.left-pic{
+    width: 300px;
+    
+}
+.contact-form {
+    width: 400px;
+    height: 500px;
+    margin: 60px 0 0  20px ;
+    background-color: #7019b8;
+    backdrop-filter: blur(25px);
+    border-radius: 30px 10px 30px 10px;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ justify-content: space-evenly;
+ box-shadow: -10px 8px  0 10px #3c096c;
+}
+.contact-form input,button{
+    width: 55%;
+    height: 35px;
+    background-color: #240046;
+    color: #eb62eb;
+    border-radius: 5px;
+    padding: 10px;
+}
+.contact-form textarea{
+    width: 55%;
+    height: 150px;
+    background-color: #240046;
+    resize: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: #eb62eb;
+    
+}
+.contact-btn {
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+.contact-btn button{
+    margin-left: 30px;
+    height: 44px;
+    font-size: larger;
+    color: #3c096c;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.contact-btn button h2{
+    font-size: 20px;
+    position: relative;
+    z-index: 2;
+    color: #9d4edd;
+    transition: 0.4s;
+    text-transform: uppercase;
+}
+.contact-btn button:hover h2{
+    color: #10002b;
+}
+.contact-btn button:nth-child(1):hover h2{
+    color:#9d4edd;
+}
+.contact-btn button:nth-child(1) h2{
+    color: #10002b;
+}
+.contact-btn button::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #9d4edd;
+    width: 100%;
+    height: 100%;
+  
+    clip-path: circle(30% at 100% 70%);
+    transition: 0.4s;
+}
+
+.contact-btn button:nth-child(1):after{
+    clip-path: circle(150% at 100% 70%);
+    
+}
+.contact-btn button:nth-child(1):hover::after{
+ clip-path: circle(30% at 100% 70%);
+
+}
+.contact-btn button:hover:after{
+     clip-path: circle(150% at 100% 50%);
+     
+}
+
+label{
+    align-self: flex-start;
+    margin: 0 0 0 50px;
+    font-size: 20px;
+    color: aliceblue;
+    transform: translateY(10px);
+}
+/* ==================================== contact us page ends==========================*/
+/*==============================header and about profile css===========================*/
+.profile{
+    width: 160px;
+    height: 160px;
+    background-color: #10002b;
+    border-radius: 50%;
+    margin: auto;
+    transform: translateY(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.profile-img{
+    width: 154px;
+    height: 154px;
+    border-radius: 50%;
+    position: relative;
+    background-color: #10002b;
+  
+}
+.profile-img:hover::after{
+    transform: translateX(160px);
+}
+.profile-img:hover img{
+    transform: translateX(160px);   
+}
+.profile-img img{
+    width: 154px;
+    height: 154px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 1;
+    transition: 0.6s;
+}
+.profile-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.profile-img h1{
+    font-size: 20px;
+    color: white;
+}
+.profile-img h2{
+    font-size: 10px;
+    color: rgb(217, 221, 224);
+}
+.profile-img button{
+    color: #10002b;
+    background-color: aliceblue;
+    transform: translateY(15px);
+    width: 75px;
+    height: 35px;
+    position: relative;
+    z-index: 1;
+    border-radius: 40px;
+    transition: 0.3s;
+}
+.profile-img button:hover{
+    background-color: #3c096c;
+    color: aliceblue;
+    letter-spacing: 1px;
+    word-spacing: -2px;
+}
+
+
+.profile-img::after{
+    content: '';
+    width: 154px;
+    height: 154px;
+    border-radius: 50%;
+    background-color: #240046;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0.2;
+    transition: 0.6s;
+} 
+.profile .border-rotate{
+    background: linear-gradient( to left,#eb62eb,white);
+    width: 200px;
+    height: 80px;
+    position: absolute;
+    animation: rotation 3s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+@keyframes rotation{
+    from{
+  transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+/*==============================header and about profile css ends===========================*/
+
+/*==============================courses page==========================================*/
+.courses{
+height: 110vh;
+}
+.courses-topic{
+    width: 150px;
+    color: #c77dff;
+    font-size: 32px;
+    text-transform: capitalize;
+    transform: translateY(20px) translateX(20px);
+}
+.courses-topic::after{
+    content: '';
+    width: 70%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 5px;
+    background-color: #eb62eb;
+    border-radius: 2px;
+}
+.course-items{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -20px;
+    margin: auto;
+    
+}
+.courses-box{
+    width: 200px;
+    height: 200px;
+    background-color: #9d4edd;
+    margin: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+.courses .info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    transition: 0.4s;
+    background-color: #10002b;
+    position: relative;
+}
+.courses-box:hover .info{
+    
+    gap: 5;
+     height: 50%;
+}
+.info::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 20px;
+    box-shadow: -5px 4px  0 4px #9d4edd;
+}
+.info::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    
+    border-top-right-radius: 20px;
+    box-shadow: 5px -5px 0  5px #10002b;
+    
+}
+.courses-box:hover .info i{
+    font-size: 50px;
+    color: #5a189a;
+}
+.courses-box:hover .info h1{
+ font-size: 12px;
+letter-spacing: 1px;
+color: #9d4edd;
+}
+.courses-box .content{
+    padding: 0 5px;
+    font-weight: 700;
+}
+.courses-box p{
+    color: #10002b;
+    margin-top: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: 0.7s;
+    transform: scale(0);
+}
+.courses-box:hover p{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.courses .info i {
+    font-size: 70px;
+    color: #9d4edd;
+    transition: 0.3s;
+    
+}
+
+.courses .info h1{
+    font-size: 20px;
+    color: aliceblue;
+    transition: 0.6s;
+}
+/*=====================================courses page ends===================================*/
+/*=====================================footer============================================*/
+.footer{
+    height: 80vh;
+}
+
+
+
+</style>
+<body>
+           <!-- ==================  nav bar============== -->
+    <header>
+        <ul>
+       <li class="active"> <a href="#1" > Home</a></li>
+       <li> <a href="#2"> about</a></li>
+       <li> <a href="#3"> contact</a></li>
+       <li> <a href="#4"> course</a></li>
+       <li> <a href="#5"> footer
+       </a></li>
+       </ul>
+        
+    </header>
+   <!-- =================== header ================= -->
+    
+    <section id="1" class="header">
+         <div class="profile">
+            <div class="border-rotate">
+
+            </div>
+        <div class="profile-img">
+            <img src="wasif.jpg" alt="">
+   <h1>wasif ahmed</h1>
+    <h2>web designer</h2>
+    <button>Hire me</button>
+        </div>
+       </div>
+       <h1 class="header-topic-portfolio"><span>Hi !</span> </h1> 
+       <h1 class="header-topic-portfolio"> welcome to wasif world</h1>
+       
+    <img src="wave.svg" alt="" id="wave">
+    <form action="">
+    <input type="search" name="" id="header-search" placeholder="search whatever you like">
+    <input type="submit" value="search">
+    </form>
+    </section>
+    <!-- ======================== about us page ======================= -->
+    <section id="2" class="abouts-us">
+       <div class="profile">
+        <div class="border-rotate">
+
+        </div>
+        <div class="profile-img">
+            <img src="wasif.jpg" alt="">
+            <h1>wasif ahmed</h1>
+             <h2>web designer</h2>
+             <button>Hire me</button>
+        </div>
+       </div>
+    </section>
+    <!-- ============================contact us page ====================== -->
+    <section id="3" class="contact-us">
+        <div class="left">
+      <h1 class="contact-us-topic"> Contact us</h1>
+      <br>
+      
+      <h2 class="contact-us-content">
+      Throw your issue or anything <br>related to you or this <br><h1 class="contact-us-website">website.</h1>
+    </h2>
+    <img src="left-pic.png" alt="" class="left-pic">
+    </div>
+    
+    <div class="right">
+      <form action="" class="contact-form">
+        <label for="contact-text">
+   Name:
+        </label>
+        <input type="text" id="contact-text">
+     <label for="contact-email">
+        Email:
+     </label>
+      <input type="email" >
+ <label for="contact-message" >
+    Message:
+ </label>
+      <textarea name="" id="contact-message" cols="30" rows="10"></textarea>
+     <div class="contact-btn">
+      <button ><h2>send</h2></button>
+      <button><h2>reset</h2></button>
+      </div>
+      </form>
+    </div>
+    </section>
+
+    <!-- ============================ courses page ========================== -->
+    <section id="4" class="courses">
+         <h2 class="courses-topic"> courses</h2>
+         <div class="course-items">
+             <div class="courses-box web-development">
+                <div class="info">
+                    <i class="fa-solid fa-file-code"></i>
+                    <h1> web development</h1>
+                </div>
+                <div class="content">
+                <p>is used for the building and maintenance of websites</p>
+            </div>
+             </div>
+            <div class="courses-box python">
+                <div class="info">
+                    <i class="fa-brands fa-python"></i>
+                    <h1> python</h1>
+                </div>
+                <div class="content">
+                              <p> is used for making software and AI    </p>
+                            </div>
+            </div>
+            <div class="courses-box c++">
+                <div class="info">
+                    <i class="fa-solid fa-c"></i>
+                    <h1> C language </h1>
+                </div>
+                <div class="content">
+                <p>    is used for general-purpose computer programming language.  </p>
+            </div> 
+            </div>
+            <div class="courses-box php">
+                <div class="info">
+                    <i class="fa-brands fa-php"></i>
+                    <h1> php</h1>
+                </div>
+                <div class="content">
+                <p>   is used for backend purpose in web development  </p>
+            </div>
+            </div>
+            <div class="courses-box js">
+                <div class="info">
+                    <i class="fa-brands fa-js"></i>
+                    <h1> javascript</h1>
+                </div>
+                <div class="content">
+                <p>   is used for logic purpose in web development  </p>
+            </div>
+            </div>
+            <div class="courses-box bootstrap">
+                <div class="info">
+                <i class="fa-brands fa-bootstrap"></i>
+                <h1> bootstrap</h1>
+            </div>
+            <div class="content">
+                            <p>  open source for front-end development framework for the creation of websites</p>
+                        </div>
+                        </div>
+         </div>
+    </section>
+    <!-- =============================== footer ================================ -->
+    <section id="5" class="footer ">
+        
+    </section>
+</body>
+<script>
+    
+</script>
+</html>
